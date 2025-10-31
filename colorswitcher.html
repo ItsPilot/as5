@@ -12,6 +12,13 @@
     
     <script>
 
+        const colors = ["Red","green","blue","orange", "purple"];
+        function changecolor()
+        {
+        const c = colors[Math.floor(Math.random() * colors.length)];
+        document.body.style.background = c;
+        }
+
         function switchToBlack()
         {
             let body_element = document.getElementById("body_element");
